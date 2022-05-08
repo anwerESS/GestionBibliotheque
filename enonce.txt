@@ -16,9 +16,3 @@ A)  Définissez les classes Document, Livre, Roman, Manuel, Revue et Dictionnair
  boolean supprimer(Document doc) - supprime le document indiqué et renvoie true (false en cas d’échec)
 
 C) Ecrivez un programme principale Main() qui permet d'ajouter quelque livres dans la bibliothèque, les afficher puis les supprimer
-
-
-
-pointeur
-allocation
-vector
