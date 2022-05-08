@@ -1,0 +1,176 @@
+============== TestDocuments::test() ==============
+NUMERO ENREGISTREMENT : 1001
+TITRE : Roman 1
+AUTEUR : Victor Hugo
+NUMERO PAGES : 103
+PRIX : GONCOURT
+
+
+NUMERO ENREGISTREMENT : 1002
+TITRE : Manuel 1
+AUTEUR : André Malraux
+NUMERO PAGES : 201
+NIVEAU SCOLAIRE : 201
+
+
+NUMERO ENREGISTREMENT : 1003
+TITRE : Revu 1
+DATE PUBLICATION : 5/2005
+
+
+NUMERO ENREGISTREMENT : 1004
+TITRE : Dictionnaire 1
+LANGUE : Anglais
+
+
+
+
+**************************************************
+================== Bibliotheque ==================
+**************************************************
+
+
+============== Ajouter Documents ==============
+bib.ajouter(&roman_1) : true
+
+Numero d'enregistrement deja existe la bibliotheque!
+bib.ajouter(&roman_1) : false
+
+bib.ajouter(&roman_2) : true
+
+bib.ajouter(&roman_3) : true
+
+bib.ajouter(&manuel_1) : true
+
+bib.ajouter(&manuel_2) : true
+
+bib.ajouter(&revu_1) : true
+
+bib.ajouter(&revu_1) : true
+
+bib.ajouter(&dict_1) : true
+
+bib.ajouter(&dict_2) : true
+
+bib.ajouter(&dict_3) : true
+
+La bibliotheque a atteint sa capacité maximale
+bib.ajouter(&dict_4) : false
+
+
+
+============== Affichage avant suppression ==============
+NUMERO ENREGISTREMENT : 1001
+TITRE : Roman 1
+AUTEUR : Victor Hugo
+NUMERO PAGES : 103
+PRIX : GONCOURT
+
+
+NUMERO ENREGISTREMENT : 1002
+TITRE : Roman 2
+AUTEUR : André Malraux
+NUMERO PAGES : 209
+PRIX : GONCOURT
+
+
+NUMERO ENREGISTREMENT : 1003
+TITRE : Roman 3
+AUTEUR : Alexandre Dumas
+NUMERO PAGES : 98
+PRIX : GONCOURT
+
+
+NUMERO ENREGISTREMENT : 1004
+TITRE : Manuel 1
+AUTEUR : Jean Jacques Rousseau
+NUMERO PAGES : 347
+NIVEAU SCOLAIRE : 347
+
+
+NUMERO ENREGISTREMENT : 1005
+TITRE : Manuel 2
+AUTEUR : Émile Zola
+NUMERO PAGES : 201
+NIVEAU SCOLAIRE : 201
+
+
+NUMERO ENREGISTREMENT : 1006
+TITRE : Revu 1
+DATE PUBLICATION : 5/2005
+
+
+NUMERO ENREGISTREMENT : 1007
+TITRE : Revu 2
+DATE PUBLICATION : 3/2017
+
+
+NUMERO ENREGISTREMENT : 1008
+TITRE : Dictionnaire 1
+LANGUE : Anglais
+
+
+NUMERO ENREGISTREMENT : 1009
+TITRE : Dictionnaire 2
+LANGUE : Francais
+
+
+NUMERO ENREGISTREMENT : 1010
+TITRE : Dictionnaire 3
+LANGUE : Italien
+
+
+
+
+============== Suppression ==============
+bib.supprimer(&roman_1) : true
+
+Document n'existe pas dans la bibliotheque!
+bib.supprimer(&roman_1) : false
+
+bib.supprimer(&roman_2) : true
+
+bib.supprimer(&roman_3) : true
+
+
+
+============== Affichage apres suppression ==============
+NUMERO ENREGISTREMENT : 1004
+TITRE : Manuel 1
+AUTEUR : Jean Jacques Rousseau
+NUMERO PAGES : 347
+NIVEAU SCOLAIRE : 347
+
+
+NUMERO ENREGISTREMENT : 1005
+TITRE : Manuel 2
+AUTEUR : Émile Zola
+NUMERO PAGES : 201
+NIVEAU SCOLAIRE : 201
+
+
+NUMERO ENREGISTREMENT : 1006
+TITRE : Revu 1
+DATE PUBLICATION : 5/2005
+
+
+NUMERO ENREGISTREMENT : 1007
+TITRE : Revu 2
+DATE PUBLICATION : 3/2017
+
+
+NUMERO ENREGISTREMENT : 1008
+TITRE : Dictionnaire 1
+LANGUE : Anglais
+
+
+NUMERO ENREGISTREMENT : 1009
+TITRE : Dictionnaire 2
+LANGUE : Francais
+
+
+NUMERO ENREGISTREMENT : 1010
+TITRE : Dictionnaire 3
+LANGUE : Italien
+
+

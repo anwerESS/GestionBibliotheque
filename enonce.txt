@@ -1,0 +1,24 @@
+Gestion d’une bibliothèque
+  Pour la gestion d’une bibliothèque on nous demande d’écrire une application traitant des documents de nature diverse : des livres, qui peuvent être des romans ou des manuels, des revues, des dictionnaires, etc. Tous les documents ont un numéro d’enregistrement (un entier) et un titre (une chaîne de caractères). Les livres ont, en plus, un auteur (une chaîne) et un nombre de pages (un entier). Les romans ont éventuellement un prix littéraire (un entier conventionnel, parmi : GONCOURT, MEDICIS, INTERALLIE, etc.), tandis que les manuels ont un niveau scolaire (un entier). Les revues ont un mois et une année (des entiers) et les dictionnaires ont une langue (une chaîne de caractères appartenant à un ensemble prédéfini, comme "anglais", "allemand", "espagnol", etc.). Tous les divers objets en question ici (livres, revues, dictionnaires, romans, etc.) doivent pouvoir être manipulées en tant que documents. Voici le diagramme de classes :
+
+
+A)  Définissez les classes Document, Livre, Roman, Manuel, Revue et Dictionnaire, entre lesquelles existeront les liens d’héritage que la description précédente suggère. Dans chacune de ces classes définissez
+
+ le constructeur qui prend autant arguments qu’il y a de variables d’instance et qui se limite à initialiser ces dernières avec les valeurs des arguments,
+ une méthode public String toString() produisant une description sous forme de chaîne de caractères des objets,
+ si vous avez déclaré private les variables d’instance (c’est conseillé, sauf indication contraire ) définissez également des « accesseurs » publics get... permettant de consulter les valeurs de ces variables. Écrivez une classe exécutable TestDocuments qui crée et affiche plusieurs documents de types différents.
+
+ B)  Une bibliothèque sera représentée par un tableau de.  Définissez une classe Bibliotheque, avec un tel tableau pour variable d’instance et les méthodes :
+
+ Bibliotheque(int capacité) - constructeur qui crée une bibliothèque ayant la capacité (nombre maximum de documents) indiquée,
+ void afficherDocuments() - affiche tous les ouvrages de la bibliothèque,
+ boolean ajouter(Document doc) - ajoute le document indiqué et renvoie true (false en cas d’échec),
+ boolean supprimer(Document doc) - supprime le document indiqué et renvoie true (false en cas d’échec)
+
+C) Ecrivez un programme principale Main() qui permet d'ajouter quelque livres dans la bibliothèque, les afficher puis les supprimer
+
+
+
+pointeur
+allocation
+vector
